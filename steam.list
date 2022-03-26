@@ -1,1 +1,8 @@
-DOMAIN-SUFFIX,steampowered.com
+DOMAIN-SUFFIX,api.steampowered.com
+DOMAIN-SUFFIX,steam-chat.com
+DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
+DOMAIN-SUFFIX,cdn.akamai.steamstatic.net
+DOMAIN-SUFFIX,community.akamai.steamstatic.com
+DOMAIN-SUFFIX,steamcommunity.com
+DOMAIN-SUFFIX,store.steampowered.com
+DOMAIN-SUFFIX,api.steampowered.com
