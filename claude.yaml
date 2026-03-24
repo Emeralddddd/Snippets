@@ -1,0 +1,15 @@
+payload:
+  # === Claude 核心域名（强烈推荐）===
+  - DOMAIN-SUFFIX,anthropic.com # 包含 api.anthropic.com、console.anthropic.com、a-api.anthropic.com 等所有子域（API + 后台）
+  - DOMAIN-SUFFIX,claude.ai # Claude.ai 主站（前端、登录、聊天）
+  - DOMAIN-SUFFIX,claudeusercontent.com # 用户上传内容 / Artifacts / 图片等关键域名（很多规则里缺失这个会导致部分功能异常）
+
+  # === 额外常用域名（建议一起加）===
+  - DOMAIN,cdn.usefathom.com # 网站分析脚本（Fathom Analytics）
+  - DOMAIN-SUFFIX,intercomcdn.com # 客服聊天窗口（Intercom）
+  - DOMAIN,servd-anthropic-website.b-cdn.net # 网站静态资源 CDN
+
+  # === Claude Code / 新功能域名（2025-2026 新增）===
+  - DOMAIN-SUFFIX,claude.com # Claude.com 主域（部分重定向和 Code 入口）
+  - DOMAIN-SUFFIX,code.claude.com # Claude Code（代码沙箱、开发工具）
+  - DOMAIN-SUFFIX,platform.claude.com # 开发者平台相关
