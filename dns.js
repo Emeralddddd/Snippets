@@ -23,16 +23,6 @@ var hostname = $domain;
 var ssid = ($network && $network.wifi && $network.wifi.ssid) || '';
 var networkDns = Array.isArray($network.dns) ? $network.dns.filter(Boolean) : [];
 
-var __debugMsg =
-    '[dns.js] host=' + hostname +
-    ' ssid=' + JSON.stringify(ssid) +
-    ' wifi=' + JSON.stringify($network && $network.wifi) +
-    ' networkDns=' + JSON.stringify(networkDns);
-console.log(__debugMsg);
-if (typeof $notification !== 'undefined' && $notification.post) {
-    $notification.post('dns.js', hostname, __debugMsg);
-}
-
 // 这些内网域名后缀使用系统 DNS 而非 DoH
 var domain_suffix = [
     '.byted.org',
